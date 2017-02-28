@@ -1,0 +1,12 @@
+PODS:
+  - PanelKit (0.8.2)
+
+DEPENDENCIES:
+  - PanelKit (~> 0.8)
+
+SPEC CHECKSUMS:
+  PanelKit: dd4337490cc7935444ca7e4a616a3b4ccfa5cff4
+
+PODFILE CHECKSUM: 73bc07ea02bcf8d77f6aeb8e6c3d1c14d4d25db7
+
+COCOAPODS: 1.2.0

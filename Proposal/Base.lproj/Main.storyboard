@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="VTR-wL-7uV" kind="show" id="YEF-D2-tEq"/>
+                                    <action selector="presentTest" destination="xVN-ot-AGp" eventType="touchUpInside" id="QPd-lN-6Ch"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,24 +53,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n80-gl-f2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155" y="434"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YEC-C5-670">
-            <objects>
-                <viewController id="VTR-wL-7uV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0rf-Zh-1RV"/>
-                        <viewControllerLayoutGuide type="bottom" id="TCQ-oM-Lei"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xUf-BT-beE">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8U1-eg-sjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1020" y="434"/>
         </scene>
     </scenes>
 </document>

@@ -17,6 +17,7 @@
 		DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA806E601E61FBA500769996 /* StatisticsViewController.xib */; };
 		DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */; };
 		DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */; };
+		DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		DA806E601E61FBA500769996 /* StatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
 		DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
 		DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorPlanViewController.xib; sourceTree = "<group>"; };
+		DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClassName+NSObject.swift"; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
 				DA806E4C1E61F51800769996 /* Main.storyboard */,
@@ -109,6 +112,14 @@
 				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DA8D23BB1E6635CD0052B816 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
 				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,
+				DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

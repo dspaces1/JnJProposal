@@ -16,4 +16,9 @@ class IntroViewController: UIViewController {
         
     }
 
+    @IBAction func presentTest() {
+        
+        let floorPlanViewController = FloorPlanViewController(nibName: FloorPlanViewController.className, bundle: nil)
+        navigationController?.pushViewController(floorPlanViewController, animated: true)
+    }
 }

@@ -18,16 +18,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="336" height="248"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-6u-Ddf">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diego" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-6u-Ddf">
                         <rect key="frame" x="20" y="20" width="296" height="167"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-xu-va2">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diego Urquiza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-xu-va2">
                         <rect key="frame" x="20" y="207" width="296" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="8st-Pz-TW3"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-Rk-xMw">
@@ -36,7 +36,7 @@
                     </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="KYS-xu-va2" secondAttribute="trailing" constant="20" id="7h3-a1-rlR"/>
                 <constraint firstItem="KYS-xu-va2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="CTv-0h-d1c"/>
@@ -59,4 +59,7 @@
             <point key="canvasLocation" x="26" y="-84"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Diego" width="200" height="200"/>
+    </resources>
 </document>

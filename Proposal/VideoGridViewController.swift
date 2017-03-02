@@ -80,12 +80,19 @@ extension VideoGridViewController: UICollectionViewDelegate {
         UIView.transition(with: cell, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, animations: {
             self.selectedCellFrame = cell.frame
             cell.superview?.bringSubview(toFront: cell)
-            cell.frame = CGRect(x: self.collectionView.center.x - 250.0, y: self.collectionView.center.y - 250.0, width: 500.0, height: 500.0)
+            cell.frame = self.modalFrame()
             cell.videoView.alpha = 1.0
             cell.loadVideo()
         }, completion: { completed in
             cell.playerViewController.player?.play()
         })
+    }
+    
+    func modalFrame() -> CGRect {
+        let width = min(self.collectionView.frame.size.width - 60.0, 600.0)
+        let height = min(self.collectionView.frame.size.height - 60.0, 600.0)
+        
+        return CGRect(x: self.collectionView.center.x - width/2, y: self.collectionView.center.y - height/2, width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

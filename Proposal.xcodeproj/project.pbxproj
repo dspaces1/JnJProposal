@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */; };
+		9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */; };
+		9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */; };
+		9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */; };
 		DA806E491E61F51800769996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E481E61F51800769996 /* AppDelegate.swift */; };
 		DA806E4E1E61F51800769996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4C1E61F51800769996 /* Main.storyboard */; };
 		DA806E501E61F51800769996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4F1E61F51800769996 /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 
 /* Begin PBXFileReference section */
 		1CE15BE1B5AD15FEAAF63C3B /* Pods-Proposal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.release.xcconfig"; sourceTree = "<group>"; };
+		9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGridViewController.swift; sourceTree = "<group>"; };
+		9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoGridViewController.xib; sourceTree = "<group>"; };
+		9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoGridCollectionViewCell.xib; sourceTree = "<group>"; };
 		C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proposal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E451E61F51800769996 /* Proposal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proposal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E481E61F51800769996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
 				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
 				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
+				9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */,
+				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
+				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
+				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -187,9 +199,11 @@
 			files = (
 				DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */,
 				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
+				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
 				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
 				DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */,
+				9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */,
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
+				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,

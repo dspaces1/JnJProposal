@@ -45,6 +45,14 @@
                                     <action selector="presentTest" destination="xVN-ot-AGp" eventType="touchUpInside" id="QPd-lN-6Ch"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAE-yY-BtQ">
+                                <rect key="frame" x="107" y="229" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Video Grid"/>
+                                <connections>
+                                    <action selector="presentVideoGrid" destination="xVN-ot-AGp" eventType="touchUpInside" id="Mmv-Xf-h0p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

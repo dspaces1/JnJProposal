@@ -68,6 +68,7 @@ extension VideoGridViewController: UICollectionViewDelegate {
             cell.videoView.alpha = 0.0
         }, completion: { completed in
             cell.videoView.isHidden = true
+            cell.playerViewController.player?.pause()
             self.selectedCellFrame = CGRect.zero
         })
     }
@@ -81,8 +82,10 @@ extension VideoGridViewController: UICollectionViewDelegate {
             cell.superview?.bringSubview(toFront: cell)
             cell.frame = CGRect(x: self.collectionView.center.x - 250.0, y: self.collectionView.center.y - 250.0, width: 500.0, height: 500.0)
             cell.videoView.alpha = 1.0
-        }, completion: nil)
-
+            cell.loadVideo()
+        }, completion: { completed in
+            cell.playerViewController.player?.play()
+        })
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

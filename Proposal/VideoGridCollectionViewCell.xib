@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoGridCollectionViewCell" id="gTV-IL-0wX" customClass="VideoGridCollectionViewCell" customModule="Proposal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diego" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-6u-Ddf">
+                        <rect key="frame" x="20" y="20" width="296" height="164"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Diego Urquiza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-xu-va2">
+                        <rect key="frame" x="20" y="204" width="296" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-Rk-xMw">
+                        <rect key="frame" x="0.0" y="0.0" width="336" height="248"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KYS-xu-va2" secondAttribute="trailing" constant="20" id="7h3-a1-rlR"/>
+                <constraint firstItem="KYS-xu-va2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="CTv-0h-d1c"/>
+                <constraint firstAttribute="bottom" secondItem="cM6-Rk-xMw" secondAttribute="bottom" id="DQA-UJ-XoE"/>
+                <constraint firstItem="cM6-Rk-xMw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N6l-G5-6NS"/>
+                <constraint firstItem="KYS-xu-va2" firstAttribute="top" secondItem="Zu4-6u-Ddf" secondAttribute="bottom" constant="20" id="WCM-5u-JBB"/>
+                <constraint firstItem="Zu4-6u-Ddf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="eIz-rw-oHE"/>
+                <constraint firstAttribute="bottom" secondItem="KYS-xu-va2" secondAttribute="bottom" constant="20" id="jLM-vA-myp"/>
+                <constraint firstItem="cM6-Rk-xMw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mpC-05-rbi"/>
+                <constraint firstAttribute="trailing" secondItem="cM6-Rk-xMw" secondAttribute="trailing" id="oHu-Qw-ak2"/>
+                <constraint firstAttribute="trailing" secondItem="Zu4-6u-Ddf" secondAttribute="trailing" constant="20" id="obX-RE-WXe"/>
+                <constraint firstItem="Zu4-6u-Ddf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="vQ7-qH-Qjz"/>
+            </constraints>
+            <size key="customSize" width="336" height="248"/>
+            <connections>
+                <outlet property="imageView" destination="Zu4-6u-Ddf" id="2mv-GV-p0W"/>
+                <outlet property="titleLabel" destination="KYS-xu-va2" id="XbJ-Yn-a7Q"/>
+                <outlet property="videoView" destination="cM6-Rk-xMw" id="JSb-sc-wCU"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="-84"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Diego" width="200" height="200"/>
+    </resources>
+</document>

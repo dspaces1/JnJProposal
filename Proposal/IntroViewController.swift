@@ -22,8 +22,12 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func presentTest() {
-        
         let floorPlanViewController = FloorPlanViewController(nibName: FloorPlanViewController.className, bundle: nil)
         navigationController?.pushViewController(floorPlanViewController, animated: true)
+    }
+    
+    @IBAction func presentVideoGrid() {
+        let videoGridViewController = VideoGridViewController(nibName: VideoGridViewController.className, bundle: nil)
+        navigationController?.pushViewController(videoGridViewController, animated: true)
     }
 }

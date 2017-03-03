@@ -416,7 +416,7 @@ public protocol PanelContentViewControllerDelegate: class {
 	}
 	
 	
-	func popPanel(_ sender: UIBarButtonItem) {
+    public func popPanel(_ sender: UIBarButtonItem) {
 		
 		guard let panel = panelNavigationController?.panelViewController else {
 			return
@@ -442,9 +442,9 @@ public protocol PanelContentViewControllerDelegate: class {
 				
 			} else {
 				
-				let panelToggleBtn = getPanelToggleBtn()
-				
-				navigationItem.leftBarButtonItems = [panelToggleBtn] + leftBarButtonItems
+//				let panelToggleBtn = getPanelToggleBtn()
+//				
+//				navigationItem.leftBarButtonItems = [panelToggleBtn] + leftBarButtonItems
 				
 			}
 			

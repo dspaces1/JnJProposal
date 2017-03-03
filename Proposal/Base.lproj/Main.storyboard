@@ -37,12 +37,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs1-kj-uda">
-                                <rect key="frame" x="361" y="388" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAE-yY-BtQ">
+                                <rect key="frame" x="107" y="229" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Video Grid"/>
                                 <connections>
-                                    <action selector="presentTest" destination="xVN-ot-AGp" eventType="touchUpInside" id="QPd-lN-6Ch"/>
+                                    <action selector="presentVideoGrid" destination="xVN-ot-AGp" eventType="touchUpInside" id="Mmv-Xf-h0p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sng-k2-Cae">
+                                <rect key="frame" x="64" y="104" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Floor Plan"/>
+                                <connections>
+                                    <segue destination="XK5-3b-sjR" kind="show" id="vNy-9D-QRw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-0N-EmT">
@@ -60,7 +68,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n80-gl-f2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="434"/>
+            <point key="canvasLocation" x="154.6875" y="433.59375"/>
+        </scene>
+        <!--FloorPlanViewControllerID-->
+        <scene sceneID="BYN-p7-MAL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FloorPlan" referencedIdentifier="FloorPlanViewControllerID" id="XK5-3b-sjR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0SY-9S-tcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="528"/>
         </scene>
     </scenes>
 </document>

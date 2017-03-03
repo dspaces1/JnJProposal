@@ -7,4 +7,5 @@ target 'Proposal' do
 
   # Pods for Proposal
   pod 'PanelKit', '~> 0.8'
+  pod 'Charts'
 end

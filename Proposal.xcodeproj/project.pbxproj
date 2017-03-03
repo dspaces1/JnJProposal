@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */; };
+		4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */; };
+		4B9D6B7F1E678B880030474F /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */; };
+		4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */; };
+		4B9D6B831E678E970030474F /* SurveyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B821E678E970030474F /* SurveyData.swift */; };
 		DA806E491E61F51800769996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E481E61F51800769996 /* AppDelegate.swift */; };
 		DA806E4E1E61F51800769996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4C1E61F51800769996 /* Main.storyboard */; };
 		DA806E501E61F51800769996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4F1E61F51800769996 /* Assets.xcassets */; };
@@ -23,6 +28,11 @@
 
 /* Begin PBXFileReference section */
 		1CE15BE1B5AD15FEAAF63C3B /* Pods-Proposal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.release.xcconfig"; sourceTree = "<group>"; };
+		4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyChartsViewController.swift; sourceTree = "<group>"; };
+		4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyChartsViewController.xib; sourceTree = "<group>"; };
+		4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphCollectionViewCell.xib; sourceTree = "<group>"; };
+		4B9D6B821E678E970030474F /* SurveyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyData.swift; sourceTree = "<group>"; };
 		C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proposal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E451E61F51800769996 /* Proposal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proposal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E481E61F51800769996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9D6B811E678E780030474F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B9D6B821E678E970030474F /* SurveyData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		7EC051E85FE80371716E2A54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,7 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				4B9D6B811E678E780030474F /* Model */,
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
@@ -110,6 +129,10 @@
 				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
 				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
 				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
+				4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */,
+				4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */,
+				4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */,
+				4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -187,7 +210,9 @@
 			files = (
 				DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */,
 				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
+				4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */,
 				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
+				4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
 				DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */,
 			);
@@ -249,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
+				4B9D6B7F1E678B880030474F /* GraphCollectionViewCell.swift in Sources */,
+				4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
+				4B9D6B831E678E970030474F /* SurveyData.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
 				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,
 				DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */,

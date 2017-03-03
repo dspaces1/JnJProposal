@@ -16,6 +16,11 @@ class IntroViewController: UIViewController {
         
     }
 
+    @IBAction func presentSurvey() {
+        let surveyChartViewController = SurveyChartsViewController(nibName: SurveyChartsViewController.className, bundle: nil)
+        navigationController?.pushViewController(surveyChartViewController, animated: true)
+    }
+    
     @IBAction func presentTest() {
         
         let floorPlanViewController = FloorPlanViewController(nibName: FloorPlanViewController.className, bundle: nil)

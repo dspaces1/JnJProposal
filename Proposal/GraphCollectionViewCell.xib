@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GraphCollectionViewCell" customModule="Proposal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="504" height="354"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HS-LD-J8k">
+                        <rect key="frame" x="0.0" y="29" width="504" height="325"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SZ-23-bRU" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="504" height="325"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="504" id="Kp8-bt-YG5"/>
+                                    <constraint firstAttribute="height" constant="325" id="XhP-WW-jeM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0SZ-23-bRU" secondAttribute="trailing" id="4OG-HO-j2z"/>
+                            <constraint firstItem="0SZ-23-bRU" firstAttribute="top" secondItem="0HS-LD-J8k" secondAttribute="top" id="MjL-od-E7m"/>
+                            <constraint firstItem="0SZ-23-bRU" firstAttribute="leading" secondItem="0HS-LD-J8k" secondAttribute="leading" id="fxd-io-7ZS"/>
+                            <constraint firstAttribute="bottom" secondItem="0SZ-23-bRU" secondAttribute="bottom" id="mu0-pT-JtZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG0-Dp-uwi">
+                        <rect key="frame" x="8" y="8" width="488" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7ty-1C-AuU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0HS-LD-J8k" secondAttribute="trailing" id="92D-P4-Rn6"/>
+                <constraint firstItem="0HS-LD-J8k" firstAttribute="top" secondItem="sG0-Dp-uwi" secondAttribute="bottom" id="FBA-zJ-hj3"/>
+                <constraint firstAttribute="bottom" secondItem="0HS-LD-J8k" secondAttribute="bottom" id="Gdx-qp-fG7"/>
+                <constraint firstItem="sG0-Dp-uwi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="LCc-gm-WPH"/>
+                <constraint firstItem="sG0-Dp-uwi" firstAttribute="centerX" secondItem="0HS-LD-J8k" secondAttribute="centerX" id="NKY-Aw-K3X"/>
+                <constraint firstItem="sG0-Dp-uwi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Ozr-hc-GU4"/>
+                <constraint firstItem="0HS-LD-J8k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZmF-fL-DDT"/>
+                <constraint firstAttribute="trailing" secondItem="sG0-Dp-uwi" secondAttribute="trailing" constant="8" id="wvC-7O-t7v"/>
+            </constraints>
+            <connections>
+                <outlet property="barChartView" destination="0SZ-23-bRU" id="Z1o-Wo-8h3"/>
+                <outlet property="titleLabel" destination="sG0-Dp-uwi" id="QJJ-I8-SLy"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

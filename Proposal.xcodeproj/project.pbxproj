@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */; };
 		4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */; };
 		4B9D6B7F1E678B880030474F /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */; };
 		4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */; };
 		4B9D6B831E678E970030474F /* SurveyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D6B821E678E970030474F /* SurveyData.swift */; };
-=======
 		9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */; };
 		9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */; };
 		9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */; };
 		9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */; };
 		9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */; };
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 		DA806E491E61F51800769996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E481E61F51800769996 /* AppDelegate.swift */; };
 		DA806E4E1E61F51800769996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4C1E61F51800769996 /* Main.storyboard */; };
 		DA806E501E61F51800769996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4F1E61F51800769996 /* Assets.xcassets */; };
@@ -38,19 +35,16 @@
 
 /* Begin PBXFileReference section */
 		1CE15BE1B5AD15FEAAF63C3B /* Pods-Proposal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.release.xcconfig"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyChartsViewController.swift; sourceTree = "<group>"; };
 		4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyChartsViewController.xib; sourceTree = "<group>"; };
 		4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphCollectionViewCell.xib; sourceTree = "<group>"; };
 		4B9D6B821E678E970030474F /* SurveyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyData.swift; sourceTree = "<group>"; };
-=======
 		9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGridViewController.swift; sourceTree = "<group>"; };
 		9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoGridViewController.xib; sourceTree = "<group>"; };
 		9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGridCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoGridCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo.mp4; sourceTree = "<group>"; };
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 		C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proposal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E451E61F51800769996 /* Proposal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proposal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E481E61F51800769996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,11 +122,8 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				4B9D6B811E678E780030474F /* Model */,
-=======
 				DA8D23BE1E67BE620052B816 /* Storyboards */,
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
@@ -155,18 +146,15 @@
 				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
 				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
 				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
-<<<<<<< HEAD
 				4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */,
 				4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */,
 				4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */,
 				4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */,
-=======
 				9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */,
 				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
 				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
 				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
 				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,11 +241,8 @@
 			files = (
 				DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */,
 				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
 				4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */,
-=======
 				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
 				4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
@@ -325,13 +310,10 @@
 			files = (
 				9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */,
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
-<<<<<<< HEAD
 				4B9D6B7F1E678B880030474F /* GraphCollectionViewCell.swift in Sources */,
 				4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */,
-=======
 				DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */,
 				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
->>>>>>> c073ddaa8438ba679287165c5a3220a32562312b
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,

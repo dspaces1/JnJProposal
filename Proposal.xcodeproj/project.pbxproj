@@ -108,6 +108,8 @@
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
+				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
+				DA806E4C1E61F51800769996 /* Main.storyboard */,
 				DA806E4F1E61F51800769996 /* Assets.xcassets */,
 				DA806E511E61F51800769996 /* LaunchScreen.storyboard */,
 				DA806E541E61F51800769996 /* Info.plist */,
@@ -124,6 +126,11 @@
 				DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */,
 				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
 				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
+				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
+				9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */,
+				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
+				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
+				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
 				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
 			);
 			name = "View Controllers";
@@ -211,6 +218,8 @@
 			files = (
 				DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */,
 				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
+				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
+				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
 				DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */,
 				DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */,
@@ -277,6 +286,7 @@
 				9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */,
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
 				DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */,
+				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,

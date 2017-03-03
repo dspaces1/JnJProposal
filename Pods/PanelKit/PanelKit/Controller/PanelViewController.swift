@@ -63,6 +63,8 @@ public protocol PanelViewControllerDelegate: class {
 			self.updateShadow()
 		}
 	}
+    
+    open let id = UUID()
 	
 	private let shadowView: UIView
 
@@ -128,7 +130,7 @@ public protocol PanelViewControllerDelegate: class {
 	
     override public func viewDidLoad() {
         super.viewDidLoad()
-
+        
 		self.view.translatesAutoresizingMaskIntoConstraints = false
 
 		self.updateShadow()
@@ -279,28 +281,39 @@ public protocol PanelViewControllerDelegate: class {
 	
 	func didEndDrag() {
 		
-		guard isFloating || isPinned else {
-			return
-		}
-		
-		guard let containerWidth = self.view.superview?.bounds.size.width else {
-			return
-		}
-		
-		if self.view.frame.maxX >= containerWidth {
-			
-			delegate?.didEndDrag(self, toEdgeOf: .right)
-			
-		} else if self.view.frame.minX <= 0 {
-			
-			delegate?.didEndDrag(self, toEdgeOf: .left)
-			
-		} else {
-			
-			delegate?.didEndDragFree(self)
-			
-		}
-		
+//		guard isFloating || isPinned else {
+//			return
+//		}
+//		
+//		guard let containerWidth = self.view.superview?.bounds.size.width else {
+//			return
+//		}
+//		
+//		if self.view.frame.maxX >= containerWidth {
+//			
+//			delegate?.didEndDrag(self, toEdgeOf: .right)
+//			
+//		} else if self.view.frame.minX <= 0 {
+//			
+//			delegate?.didEndDrag(self, toEdgeOf: .left)
+//			
+//		} else {
+//			
+//			delegate?.didEndDragFree(self)
+//			
+//		}
+        
+        guard let containerWidth = self.view.superview?.bounds.size.width else {
+            return
+        }
+        
+        if self.view.frame.maxX >= containerWidth || self.view.frame.minX <= 0  {
+            
+            delegate?.didDragFree(self)
+            let didEndDrag = Notification.Name("DidEndDrag")
+            NotificationCenter.default.post(name: didEndDrag, object: id)
+
+        }
 	}
 	
 	func allowedCenter(for proposedCenter: CGPoint) -> CGPoint {

@@ -117,7 +117,7 @@ extension PanelManager {
 
 extension PanelManager where Self: UIViewController {
 	
-	func close(_ panel: PanelViewController) {
+	public func close(_ panel: PanelViewController) {
 		
 		panel.view.removeFromSuperview()
 		

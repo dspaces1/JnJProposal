@@ -21,8 +21,10 @@
 		DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */; };
 		DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA806E601E61FBA500769996 /* StatisticsViewController.xib */; };
 		DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */; };
-		DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */; };
 		DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */; };
+		DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */; };
+		DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */; };
+		DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +47,10 @@
 		DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		DA806E601E61FBA500769996 /* StatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
 		DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
-		DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorPlanViewController.xib; sourceTree = "<group>"; };
 		DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClassName+NSObject.swift"; sourceTree = "<group>"; };
+		DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloorPlan.storyboard; sourceTree = "<group>"; };
+		DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
+		DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterKeys.swift; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,7 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D23BE1E67BE620052B816 /* Storyboards */,
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
@@ -108,6 +113,7 @@
 				DA806E4F1E61F51800769996 /* Assets.xcassets */,
 				DA806E511E61F51800769996 /* LaunchScreen.storyboard */,
 				DA806E541E61F51800769996 /* Info.plist */,
+				DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */,
 			);
 			path = Proposal;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
 				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
 				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
+				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -135,6 +142,15 @@
 				DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		DA8D23BE1E67BE620052B816 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA806E4C1E61F51800769996 /* Main.storyboard */,
+				DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +221,7 @@
 				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
 				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
+				DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */,
 				DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */,
 				9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */,
 				9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */,
@@ -268,8 +285,10 @@
 			files = (
 				9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */,
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
+				DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */,
 				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
+				DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
 				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,

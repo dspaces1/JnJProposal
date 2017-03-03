@@ -9,28 +9,67 @@
 import UIKit
 import PanelKit
 
-class FloorPlanViewController: PanelContentViewController {
+class FloorPlanViewController: UIViewController, PanelManager {
 
+    @IBOutlet weak var contentWrapperView: UIView!
+    @IBOutlet weak var contentView: UIView!
+    
+    var panelViewControllers: [PanelViewController] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(removeViewController(withNotification:)), name: NotificationCenterKeys.didEndDrag, object: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func removeViewController(withNotification notification: NSNotification) {
+        guard let viewControllerID = notification.object as? UUID else { return }
+        
+        for viewController in panelViewControllers {
+            if viewController.id == viewControllerID {
+                close(viewController)
+            }
+        }
     }
-    */
+    
+    @IBAction func addCubeViewController(_ sender: UIBarButtonItem) {
+        
+        let cubeViewController = storyboard?.instantiateViewController(withIdentifier: "CubeViewControllerID") as! CubeViewController
+        
+        cubeViewController.restorationIdentifier = "\(UUID())"
+        
+        let cubePanelViewController = PanelViewController(with: cubeViewController, in: self)
+        
+        panelViewControllers.append(cubePanelViewController)
+        
+        
+        showPopover(cubePanelViewController, from: sender)
+    }
+    
+    func showPopover(_ vc: UIViewController, from barButtonItem: UIBarButtonItem) {
+        
+        vc.modalPresentationStyle = .popover
+        vc.popoverPresentationController?.barButtonItem = barButtonItem
+        
+        present(vc, animated: false, completion: nil)
+        
+    }
+    
+    // The view in which the panels may be dragged around
+    var panelContentWrapperView: UIView {
+        return contentWrapperView
+    }
+    
+    // The content view, which will be moved/resized when panels pin
+    var panelContentView: UIView {
+        return contentView
+    }
+    
+    // An array of PanelViewController objects
+    var panels: [PanelViewController] {
+        return panelViewControllers
+    }
+
+    
 
 }

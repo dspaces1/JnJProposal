@@ -45,6 +45,14 @@
                                     <action selector="presentTest" destination="xVN-ot-AGp" eventType="touchUpInside" id="QPd-lN-6Ch"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csa-1q-0CW">
+                                <rect key="frame" x="118" y="594" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FloorPlan"/>
+                                <connections>
+                                    <segue destination="XK5-3b-sjR" kind="show" id="8Kn-WB-Mxo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -53,6 +61,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n80-gl-f2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155" y="434"/>
+        </scene>
+        <!--FloorPlanViewControllerID-->
+        <scene sceneID="BYN-p7-MAL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FloorPlan" referencedIdentifier="FloorPlanViewControllerID" id="XK5-3b-sjR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0SY-9S-tcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="528"/>
         </scene>
     </scenes>
 </document>

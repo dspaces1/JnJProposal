@@ -30,6 +30,7 @@
 		DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */; };
 		DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */; };
 		DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */; };
+		DA8D23C61E69F89B0052B816 /* FloorItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloorPlan.storyboard; sourceTree = "<group>"; };
 		DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
 		DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterKeys.swift; sourceTree = "<group>"; };
+		DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItemsViewController.swift; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
 				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
 				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
+				DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -170,7 +173,6 @@
 		DA8D23BE1E67BE620052B816 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				DA806E4C1E61F51800769996 /* Main.storyboard */,
 				DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */,
 			);
 			name = Storyboards;

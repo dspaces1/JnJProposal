@@ -32,6 +32,16 @@ class FloorPlanViewController: UIViewController, PanelManager {
         }
     }
     
+    @IBAction func presentFloorItems(_ sender: UIBarButtonItem) {
+        let floorItemsViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemsViewController") as! FloorItemsViewController
+        
+        floorItemsViewController.modalPresentationStyle = .popover
+        floorItemsViewController.popoverPresentationController?.barButtonItem = sender
+    
+        present(floorItemsViewController, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func addCubeViewController(_ sender: UIBarButtonItem) {
         
         let cubeViewController = storyboard?.instantiateViewController(withIdentifier: "CubeViewControllerID") as! CubeViewController
@@ -69,7 +79,4 @@ class FloorPlanViewController: UIViewController, PanelManager {
     var panels: [PanelViewController] {
         return panelViewControllers
     }
-
-    
-
 }

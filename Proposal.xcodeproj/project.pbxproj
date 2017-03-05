@@ -31,6 +31,12 @@
 		DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */; };
 		DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */; };
 		DA8D23C61E69F89B0052B816 /* FloorItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */; };
+		DA8D23C81E6BD2950052B816 /* FloorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23C71E6BD2950052B816 /* FloorItem.swift */; };
+		DA8D23CE1E6C6E690052B816 /* SeatingDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23CD1E6C6E690052B816 /* SeatingDeskViewController.swift */; };
+		DA8D23D01E6C6F770052B816 /* FloorItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23CF1E6C6F770052B816 /* FloorItemViewController.swift */; };
+		DA8D23D31E6C70FB0052B816 /* FloorItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D21E6C70FB0052B816 /* FloorItemBuilder.swift */; };
+		DA8D23D61E6C83840052B816 /* FloorItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D51E6C83840052B816 /* FloorItemTableViewCell.swift */; };
+		DA8D23D81E6C8AC40052B816 /* ClickableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +69,12 @@
 		DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
 		DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterKeys.swift; sourceTree = "<group>"; };
 		DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItemsViewController.swift; sourceTree = "<group>"; };
+		DA8D23C71E6BD2950052B816 /* FloorItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItem.swift; sourceTree = "<group>"; };
+		DA8D23CD1E6C6E690052B816 /* SeatingDeskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatingDeskViewController.swift; sourceTree = "<group>"; };
+		DA8D23CF1E6C6F770052B816 /* FloorItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItemViewController.swift; sourceTree = "<group>"; };
+		DA8D23D21E6C70FB0052B816 /* FloorItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItemBuilder.swift; sourceTree = "<group>"; };
+		DA8D23D51E6C83840052B816 /* FloorItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorItemTableViewCell.swift; sourceTree = "<group>"; };
+		DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickableView+UIView.swift"; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9D6B821E678E970030474F /* SurveyData.swift */,
+				DA8D23C71E6BD2950052B816 /* FloorItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -124,8 +137,8 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D23C91E6C6D850052B816 /* Floor Plan */,
 				4B9D6B811E678E780030474F /* Model */,
-				DA8D23BE1E67BE620052B816 /* Storyboards */,
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
@@ -146,8 +159,6 @@
 				DA806E5D1E61F9BB00769996 /* NavigationViewController.swift */,
 				DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */,
 				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
-				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
-				DA8D23B81E6630880052B816 /* FloorPlanViewController.xib */,
 				4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */,
 				4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */,
 				4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */,
@@ -156,8 +167,6 @@
 				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
 				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
 				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
-				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
-				DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */,
+				DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -176,6 +186,53 @@
 				DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DA8D23C91E6C6D850052B816 /* Floor Plan */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23D41E6C835E0052B816 /* Views */,
+				DA8D23D11E6C70BF0052B816 /* Helpers */,
+				DA8D23CB1E6C6DA70052B816 /* View Controllers */,
+				DA8D23BE1E67BE620052B816 /* Storyboards */,
+			);
+			name = "Floor Plan";
+			sourceTree = "<group>";
+		};
+		DA8D23CB1E6C6DA70052B816 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */,
+				DA8D23C51E69F89B0052B816 /* FloorItemsViewController.swift */,
+				DA8D23CC1E6C6DB80052B816 /* Items */,
+				DA8D23CF1E6C6F770052B816 /* FloorItemViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DA8D23CC1E6C6DB80052B816 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23C11E67C4DD0052B816 /* CubeViewController.swift */,
+				DA8D23CD1E6C6E690052B816 /* SeatingDeskViewController.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		DA8D23D11E6C70BF0052B816 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23D21E6C70FB0052B816 /* FloorItemBuilder.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DA8D23D41E6C835E0052B816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23D51E6C83840052B816 /* FloorItemTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +302,6 @@
 				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
 				4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */,
 				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
-				DA8D23BA1E6630880052B816 /* FloorPlanViewController.xib in Resources */,
 				4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
 				DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */,
@@ -316,12 +372,18 @@
 				4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */,
 				DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */,
 				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
+				DA8D23D61E6C83840052B816 /* FloorItemTableViewCell.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
 				DA8D23C61E69F89B0052B816 /* FloorItemsViewController.swift in Sources */,
+				DA8D23C81E6BD2950052B816 /* FloorItem.swift in Sources */,
+				DA8D23CE1E6C6E690052B816 /* SeatingDeskViewController.swift in Sources */,
 				4B9D6B831E678E970030474F /* SurveyData.swift in Sources */,
+				DA8D23D81E6C8AC40052B816 /* ClickableView+UIView.swift in Sources */,
+				DA8D23D01E6C6F770052B816 /* FloorItemViewController.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
+				DA8D23D31E6C70FB0052B816 /* FloorItemBuilder.swift in Sources */,
 				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,
 				DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */,
 			);

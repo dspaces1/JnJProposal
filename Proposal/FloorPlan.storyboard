@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq1-cv-Kp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="5"/>
+            <point key="canvasLocation" x="592" y="-532"/>
         </scene>
         <!--Floor Items View Controller-->
         <scene sceneID="QoR-Kx-fX7">
@@ -130,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="64" width="300" height="640"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="wdN-SH-hE8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FloorItemTableViewCell" rowHeight="110" id="wdN-SH-hE8" customClass="FloorItemTableViewCell" customModule="Proposal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="300" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdN-SH-hE8" id="eEI-C4-z0z">
@@ -150,6 +150,9 @@
                                                 <constraint firstItem="cmK-4D-KwB" firstAttribute="centerY" secondItem="eEI-C4-z0z" secondAttribute="centerY" id="vI4-Y0-qWT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="cmK-4D-KwB" id="NdO-n2-pLQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -182,10 +185,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="704"/>
+                    <connections>
+                        <outlet property="tableView" destination="SVg-EU-FFE" id="FD1-Ki-iCM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nR-Xd-Lr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-387.3046875" y="-297.65625"/>
+            <point key="canvasLocation" x="-638" y="-295"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6IN-My-MnK">
@@ -204,6 +210,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwu-Ut-YMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="120" y="870"/>
+        </scene>
+        <!--Floor Item View Controller-->
+        <scene sceneID="kZP-sS-yoG">
+            <objects>
+                <viewController storyboardIdentifier="FloorItemViewControllerID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rzd-Hd-x8A" customClass="FloorItemViewController" customModule="Proposal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c75-J0-nLD"/>
+                        <viewControllerLayoutGuide type="bottom" id="SOb-5d-JJn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IO1-bM-vZd">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-lz-Qxf">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OMK-lz-Qxf" secondAttribute="trailing" id="GrJ-dT-nzD"/>
+                            <constraint firstItem="OMK-lz-Qxf" firstAttribute="leading" secondItem="IO1-bM-vZd" secondAttribute="leading" id="dr7-Pv-zrT"/>
+                            <constraint firstItem="SOb-5d-JJn" firstAttribute="top" secondItem="OMK-lz-Qxf" secondAttribute="bottom" id="gfw-1C-Nh7"/>
+                            <constraint firstItem="OMK-lz-Qxf" firstAttribute="top" secondItem="c75-J0-nLD" secondAttribute="bottom" id="ysf-p2-d9V"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="200"/>
+                    <connections>
+                        <outlet property="imageView" destination="OMK-lz-Qxf" id="nzf-pI-6Hw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eap-JP-fo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="-226"/>
         </scene>
     </scenes>
 </document>

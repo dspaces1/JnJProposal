@@ -13,6 +13,7 @@ class FloorPlanViewController: UIViewController {
 
     @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
     
     var panelViewControllers: [PanelViewController] = []
     var floorItems: [FloorItem] = []
@@ -53,59 +54,33 @@ class FloorPlanViewController: UIViewController {
         floorItemsViewController.popoverPresentationController?.barButtonItem = sender
     
         present(floorItemsViewController, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func addCubeViewController(_ sender: UIBarButtonItem) {
-        
-//        let cubeViewController = storyboard?.instantiateViewController(withIdentifier: "CubeViewControllerID") as! CubeViewController
-//        
-//        cubeViewController.restorationIdentifier = "\(UUID())"
-//        
-//        let cubePanelViewController = PanelViewController(with: cubeViewController, in: self)
-//        
-//        panelViewControllers.append(cubePanelViewController)
-//        
-//        
-//        showPopover(cubePanelViewController, from: sender)
-        
-        let floorItemViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemViewControllerID") as! FloorItemViewController
-        
-        floorItemViewController.restorationIdentifier = "\(UUID())"
-        floorItemViewController.item = floorItems[0]
-        
-        
-        let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
-        panelViewControllers.append(cubePanelViewController)
-        showPopover(cubePanelViewController, from: sender)
-    }
-    
-    func showPopover(_ vc: UIViewController, from barButtonItem: UIBarButtonItem) {
-        
-        vc.modalPresentationStyle = .popover
-        vc.popoverPresentationController?.barButtonItem = barButtonItem
-        
-        present(vc, animated: false, completion: nil)
-        
     }
 }
 
 extension FloorPlanViewController: FloorItemsDelegate {
     
     func didSelect(item: FloorItem) {
-        print("works")
+        createPanel(for: item)
     }
     
     func createPanel(for item: FloorItem) {
-//        let floorItemViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemViewControllerID") as! FloorItemViewController
-//        
-//        floorItemViewController.restorationIdentifier = "\(UUID())"
-//        floorItemViewController.item = item
-//        
-//        
-//        let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
-//        panelViewControllers.append(cubePanelViewController)
-//        showPopover(cubePanelViewController, from: view)
+        let floorItemViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemViewControllerID") as! FloorItemViewController
+        
+        floorItemViewController.restorationIdentifier = "\(UUID())"
+        floorItemViewController.item = item
+        
+        
+        let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
+        panelViewControllers.append(cubePanelViewController)
+        showPopover(cubePanelViewController, from: saveBarButtonItem)
+    }
+    
+    func showPopover(_ viewController: UIViewController, from barButtonItem: UIBarButtonItem) {
+        
+        viewController.modalPresentationStyle = .popover
+        viewController.popoverPresentationController?.barButtonItem = barButtonItem
+        
+        present(viewController, animated: false, completion: nil)
     }
 }
 

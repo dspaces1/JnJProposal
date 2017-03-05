@@ -47,8 +47,9 @@ extension FloorItemsViewController: UITableViewDataSource {
         
         let item = floorItems[indexPath.row]
         cell.setUp(with: item) { item in
+            self.dismiss(animated: false, completion: nil)
             self.delegate?.didSelect(item: item)
-            //self.dismiss(animated: true, completion: nil)
+            
         }
         
         return cell

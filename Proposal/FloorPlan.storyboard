@@ -50,11 +50,7 @@
                                                 <action selector="presentFloorItems:" destination="ad1-fu-vVr" id="N5l-gZ-55R"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OtQ-jM-gQm">
-                                            <connections>
-                                                <action selector="addCubeViewController:" destination="ad1-fu-vVr" id="SWT-sW-xZt"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="OtQ-jM-gQm"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -74,6 +70,7 @@
                     <connections>
                         <outlet property="contentView" destination="uUo-Jf-ecf" id="nAU-9w-5bs"/>
                         <outlet property="contentWrapperView" destination="Kix-us-Bmd" id="Dj9-rU-6u7"/>
+                        <outlet property="saveBarButtonItem" destination="OtQ-jM-gQm" id="g1w-We-vVO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJu-l6-vsx" userLabel="First Responder" sceneMemberID="firstResponder"/>

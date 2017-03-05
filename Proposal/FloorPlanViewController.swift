@@ -13,7 +13,7 @@ class FloorPlanViewController: UIViewController {
 
     @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var floorItemsBarButton: UIBarButtonItem!
     
     var panelViewControllers: [PanelViewController] = []
     var floorItems: [FloorItem] = []
@@ -72,7 +72,7 @@ extension FloorPlanViewController: FloorItemsDelegate {
         
         let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
         panelViewControllers.append(cubePanelViewController)
-        showPopover(cubePanelViewController, from: saveBarButtonItem)
+        showPopover(cubePanelViewController, from: floorItemsBarButton)
     }
     
     func showPopover(_ viewController: UIViewController, from barButtonItem: UIBarButtonItem) {

@@ -12,8 +12,8 @@
         <!--Navigation View Controller-->
         <scene sceneID="NMR-C9-hKQ">
             <objects>
-                <navigationController navigationBarHidden="YES" id="LfB-UI-0rc" customClass="NavigationViewController" customModule="Proposal" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="trH-mQ-MTU">
+                <navigationController id="LfB-UI-0rc" customClass="NavigationViewController" customModule="Proposal" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="trH-mQ-MTU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-uY-OZs">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8mK-iJ-tYW">
                                 <rect key="frame" x="364" y="967" width="39" height="37"/>
@@ -112,9 +112,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vaq-k4-IhX" firstAttribute="top" secondItem="8mK-iJ-tYW" secondAttribute="bottom" constant="20" id="5GC-kw-as7"/>
+                            <constraint firstItem="9dF-uY-OZs" firstAttribute="top" secondItem="qvR-ug-v0C" secondAttribute="bottom" id="GH7-Or-ndL"/>
                             <constraint firstAttribute="trailing" secondItem="9dF-uY-OZs" secondAttribute="trailing" id="Gx9-gf-3PY"/>
                             <constraint firstItem="vaq-k4-IhX" firstAttribute="top" secondItem="9dF-uY-OZs" secondAttribute="bottom" id="Tou-9d-JoX"/>
-                            <constraint firstItem="9dF-uY-OZs" firstAttribute="top" secondItem="Fwk-1Z-SoH" secondAttribute="top" id="YLb-lc-HeH"/>
                             <constraint firstItem="8mK-iJ-tYW" firstAttribute="centerX" secondItem="Fwk-1Z-SoH" secondAttribute="centerX" id="oP6-Mk-wPa"/>
                             <constraint firstItem="9dF-uY-OZs" firstAttribute="leading" secondItem="Fwk-1Z-SoH" secondAttribute="leading" id="w9N-cq-wW6"/>
                         </constraints>

@@ -319,6 +319,7 @@
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
 				DA8D23C41E691ED60052B816 /* NotificationCenterKeys.swift in Sources */,
 				DA806E491E61F51800769996 /* AppDelegate.swift in Sources */,
+				DA8D23C61E69F89B0052B816 /* FloorItemsViewController.swift in Sources */,
 				4B9D6B831E678E970030474F /* SurveyData.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
 				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,

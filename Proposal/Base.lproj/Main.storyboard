@@ -69,6 +69,14 @@
                                     <segue destination="m3B-hq-jYC" kind="show" id="Lxu-3r-K96"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-8c-tnm">
+                                <rect key="frame" x="309" y="335" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="360 Video"/>
+                                <connections>
+                                    <action selector="playGarageVideo:" destination="xVN-ot-AGp" eventType="touchUpInside" id="bXz-3g-hRp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

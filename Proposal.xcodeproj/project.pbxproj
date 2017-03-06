@@ -23,8 +23,6 @@
 		DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E511E61F51800769996 /* LaunchScreen.storyboard */; };
 		DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5B1E61F73600769996 /* IntroViewController.swift */; };
 		DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5D1E61F9BB00769996 /* NavigationViewController.swift */; };
-		DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */; };
-		DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA806E601E61FBA500769996 /* StatisticsViewController.xib */; };
 		DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */; };
 		DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */; };
 		DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */; };
@@ -39,6 +37,11 @@
 		DA8D23D81E6C8AC40052B816 /* ClickableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */; };
 		DA8D23DB1E6C96830052B816 /* ConceptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D91E6C96830052B816 /* ConceptsViewController.swift */; };
 		DA8D23DF1E6CD3820052B816 /* LoadViews+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */; };
+		DA8D23E11E6CE5CC0052B816 /* Will.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23E01E6CE5CC0052B816 /* Will.mov */; };
+		DA8D23E31E6CE7170052B816 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E21E6CE7170052B816 /* Profile.swift */; };
+		DA8D23E71E6CE8260052B816 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */; };
+		DA8D23E91E6CEF6A0052B816 /* Maddie.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23E81E6CEF6A0052B816 /* Maddie.mov */; };
+		DA8D23EB1E6CF01C0052B816 /* Kopi.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23EA1E6CF01C0052B816 /* Kopi.mov */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +66,6 @@
 		DA806E541E61F51800769996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA806E5B1E61F73600769996 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DA806E5D1E61F9BB00769996 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		DA806E601E61FBA500769996 /* StatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
 		DA8D23B71E6630880052B816 /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
 		DA8D23BC1E66382B0052B816 /* ClassName+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClassName+NSObject.swift"; sourceTree = "<group>"; };
 		DA8D23BF1E67BE7D0052B816 /* FloorPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloorPlan.storyboard; sourceTree = "<group>"; };
@@ -79,6 +80,11 @@
 		DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickableView+UIView.swift"; sourceTree = "<group>"; };
 		DA8D23D91E6C96830052B816 /* ConceptsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptsViewController.swift; sourceTree = "<group>"; };
 		DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadViews+UIScrollView.swift"; sourceTree = "<group>"; };
+		DA8D23E01E6CE5CC0052B816 /* Will.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Will.mov; sourceTree = "<group>"; };
+		DA8D23E21E6CE7170052B816 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
+		DA8D23E81E6CEF6A0052B816 /* Maddie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Maddie.mov; sourceTree = "<group>"; };
+		DA8D23EA1E6CF01C0052B816 /* Kopi.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Kopi.mov; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,13 +147,15 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				DA806E5A1E61F54300769996 /* View Controllers */,
 				DA8D23DD1E6C9C870052B816 /* Views */,
-				DA8D23C91E6C6D850052B816 /* Floor Plan */,
 				4B9D6B811E678E780030474F /* Model */,
 				DA8D23BB1E6635CD0052B816 /* Utility */,
-				DA806E5A1E61F54300769996 /* View Controllers */,
+				DA8D23ED1E6CF2950052B816 /* Video Interviews */,
+				DA8D23EC1E6CF2800052B816 /* Survey Graph */,
+				DA8D23E41E6CE7E70052B816 /* Video Grid */,
+				DA8D23C91E6C6D850052B816 /* Floor Plan */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
-				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
 				DA806E4C1E61F51800769996 /* Main.storyboard */,
 				DA806E4F1E61F51800769996 /* Assets.xcassets */,
 				DA806E511E61F51800769996 /* LaunchScreen.storyboard */,
@@ -162,16 +170,6 @@
 			children = (
 				DA806E5B1E61F73600769996 /* IntroViewController.swift */,
 				DA806E5D1E61F9BB00769996 /* NavigationViewController.swift */,
-				DA806E5F1E61FBA500769996 /* StatisticsViewController.swift */,
-				DA806E601E61FBA500769996 /* StatisticsViewController.xib */,
-				4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */,
-				4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */,
-				4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */,
-				4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */,
-				9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */,
-				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
-				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
-				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
 				DA8D23D91E6C96830052B816 /* ConceptsViewController.swift */,
 			);
 			name = "View Controllers";
@@ -249,6 +247,41 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		DA8D23E41E6CE7E70052B816 /* Video Grid */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23E21E6CE7170052B816 /* Profile.swift */,
+				9A5072411E6871C0006D0D84 /* VideoGridViewController.swift */,
+				9A5072421E6871C0006D0D84 /* VideoGridViewController.xib */,
+				9A5072451E6873DD006D0D84 /* VideoGridCollectionViewCell.swift */,
+				9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */,
+				DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */,
+			);
+			name = "Video Grid";
+			sourceTree = "<group>";
+		};
+		DA8D23EC1E6CF2800052B816 /* Survey Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4B9D6B791E6642830030474F /* SurveyChartsViewController.swift */,
+				4B9D6B7A1E6642830030474F /* SurveyChartsViewController.xib */,
+				4B9D6B7D1E678B880030474F /* GraphCollectionViewCell.swift */,
+				4B9D6B7E1E678B880030474F /* GraphCollectionViewCell.xib */,
+			);
+			name = "Survey Graph";
+			sourceTree = "<group>";
+		};
+		DA8D23ED1E6CF2950052B816 /* Video Interviews */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23E01E6CE5CC0052B816 /* Will.mov */,
+				DA8D23E81E6CEF6A0052B816 /* Maddie.mov */,
+				DA8D23EA1E6CF01C0052B816 /* Kopi.mov */,
+				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
+			);
+			name = "Video Interviews";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,8 +351,10 @@
 				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
 				4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
+				DA8D23E91E6CEF6A0052B816 /* Maddie.mov in Resources */,
+				DA8D23E11E6CE5CC0052B816 /* Will.mov in Resources */,
 				DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */,
-				DA806E621E61FBA500769996 /* StatisticsViewController.xib in Resources */,
+				DA8D23EB1E6CF01C0052B816 /* Kopi.mov in Resources */,
 				9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */,
 				9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */,
 			);
@@ -383,9 +418,11 @@
 				9A5072471E6873DD006D0D84 /* VideoGridCollectionViewCell.swift in Sources */,
 				DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */,
 				4B9D6B7F1E678B880030474F /* GraphCollectionViewCell.swift in Sources */,
+				DA8D23E31E6CE7170052B816 /* Profile.swift in Sources */,
 				4B9D6B7B1E6642840030474F /* SurveyChartsViewController.swift in Sources */,
 				DA8D23C21E67C4DD0052B816 /* CubeViewController.swift in Sources */,
 				9A5072431E6871C0006D0D84 /* VideoGridViewController.swift in Sources */,
+				DA8D23E71E6CE8260052B816 /* ProfileBuilder.swift in Sources */,
 				DA8D23DF1E6CD3820052B816 /* LoadViews+UIScrollView.swift in Sources */,
 				DA8D23D61E6C83840052B816 /* FloorItemTableViewCell.swift in Sources */,
 				DA8D23B91E6630880052B816 /* FloorPlanViewController.swift in Sources */,
@@ -400,7 +437,6 @@
 				DA8D23D01E6C6F770052B816 /* FloorItemViewController.swift in Sources */,
 				DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */,
 				DA8D23D31E6C70FB0052B816 /* FloorItemBuilder.swift in Sources */,
-				DA806E611E61FBA500769996 /* StatisticsViewController.swift in Sources */,
 				DA8D23BD1E66382B0052B816 /* ClassName+NSObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

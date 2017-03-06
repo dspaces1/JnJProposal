@@ -14,11 +14,6 @@ class GraphCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var barChartView: BarChartView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func setUp(surveyData: SurveyData) {
         titleLabel.text = surveyData.title
         
@@ -49,6 +44,7 @@ class GraphCollectionViewCell: UICollectionViewCell {
 // MARK: - Collection View Configue
 //
 extension GraphCollectionViewCell {
+    
     func configureBarGraphDisplaySettings() {
         barChartView.chartDescription?.text = ""
         barChartView.pinchZoomEnabled = false

@@ -17,10 +17,15 @@ class ConceptsViewController: UIViewController {
         super.viewDidLoad()
         scrollView.delegate = self
         
-        let image = UIImage(named: "AirBnb")!
-        let imageView = UIImageView(image: image)
+        let imageNames = ["AirBnb", "AirBnb", "AirBnb"]
+        var imageViews = [UIImageView]()
         
-        scrollView.loadViewsIntoScrollView(views: [imageView, imageView, imageView])
+        for imageName in imageNames {
+            let image = UIImage(named: imageName)
+            imageViews.append(UIImageView(image: image))
+        }
+        
+        scrollView.loadViewsIntoScrollView(views: imageViews)
     }
 }
 

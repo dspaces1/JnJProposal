@@ -8,11 +8,12 @@
 
 import UIKit
 import Charts
+import Foundation
 
 class GraphCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var pieChartView: PieChartView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,46 +23,41 @@ class GraphCollectionViewCell: UICollectionViewCell {
     func setUp(surveyData: SurveyData) {
         titleLabel.text = surveyData.title
         
-        setMultipleBarGraphDataWithSurveyData(surveyData: surveyData)
+        setPieChartGraphDataWithSurveyData(surveyData: surveyData)
     }
     
-    func setMultipleBarGraphDataWithSurveyData(surveyData: SurveyData) {
+    func setPieChartGraphDataWithSurveyData(surveyData: SurveyData) {
         
-        var dataSets: [BarChartDataSet] = []
+        let pieChartData = PieChartData()
+        let pieChartDataSet = PieChartDataSet()
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.maximumFractionDigits = 1
+        formatter.multiplier = 1.0
+
         for i in 0..<surveyData.values.count {
-            var dataEntries: [BarChartDataEntry] = []
-            for j in 0..<surveyData.values[i].count {
-                let dataEntry = BarChartDataEntry(x: Double(j), y: surveyData.values[i][j])
-                dataEntries.append(dataEntry)
-            }
-            let chartDataSet = BarChartDataSet(values: dataEntries, label: surveyData.dataLabels[i])
-            chartDataSet.colors = ChartColorTemplates.colorful()
-            dataSets.append(chartDataSet)
+            let pieChartDataEntry = PieChartDataEntry(value: surveyData.values[i], label: surveyData.labels[i])
+            pieChartDataSet.addEntry(pieChartDataEntry)
         }
-        let chartData = BarChartData(dataSets: dataSets)
+
+        pieChartDataSet.colors = ChartColorTemplates.colorful()
+        pieChartDataSet.label = nil
+        pieChartDataSet.valueFormatter = DefaultValueFormatter(formatter: formatter)
         
-        configureBarGraphDisplaySettings()
-        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:surveyData.dataSetIdentifiers)
-        barChartView.data = chartData
+        pieChartData.addDataSet(pieChartDataSet)
+        
+        self.pieChartView.chartDescription?.text = surveyData.description
+        self.pieChartView.data = pieChartData
+        configurePieGraphDisplaySettings()
     }
+    
 }
 
-// MARK: - Collection View Configue
-//
+// MARK: - Collection View Configure
 extension GraphCollectionViewCell {
-    func configureBarGraphDisplaySettings() {
-        barChartView.chartDescription?.text = ""
-        barChartView.pinchZoomEnabled = false
-        barChartView.doubleTapToZoomEnabled = false
-        barChartView.highlightPerTapEnabled = false
-        barChartView.highlightPerDragEnabled = false
-        barChartView.xAxis.labelPosition = .bottom
-        barChartView.leftAxis.drawGridLinesEnabled = false
-        barChartView.leftAxis.drawAxisLineEnabled = false
-        barChartView.rightAxis.drawGridLinesEnabled = false
-        barChartView.rightAxis.drawAxisLineEnabled = false
-        barChartView.rightAxis.drawLabelsEnabled = false
+    func configurePieGraphDisplaySettings() {
         
-        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        self.pieChartView.usePercentValuesEnabled = true
+        self.pieChartView.animate(xAxisDuration: 0.0, yAxisDuration: 1.5)
     }
 }

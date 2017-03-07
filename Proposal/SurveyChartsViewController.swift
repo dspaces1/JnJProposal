@@ -31,6 +31,8 @@ class SurveyChartsViewController: UIViewController {
     func setUpGraphCollectionView(){
         graphCollectionView.dataSource = self
         graphCollectionView.delegate = self
+        
+        automaticallyAdjustsScrollViewInsets = false
     }
 
 }

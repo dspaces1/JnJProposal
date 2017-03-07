@@ -53,15 +53,7 @@ class IntroViewController: UIViewController {
     }
     
     func playGarageVideo() {
-        let youtubeId = "-xNN-bJQ4vI"
-        var youtubeUrl = NSURL(string:"youtube://\(youtubeId)")!
-        if UIApplication.shared.canOpenURL(youtubeUrl as URL) {
-            UIApplication.shared.open(youtubeUrl as URL, options: [:], completionHandler: nil)
-            
-        } else {
-            youtubeUrl = NSURL(string:"https://www.youtube.com/watch?v=\(youtubeId)")!
-            UIApplication.shared.open(youtubeUrl as URL, options: [:], completionHandler: nil)
-        }
+        performSegue(withIdentifier: "Stats", sender: self)
     }
 }
 
@@ -78,13 +70,13 @@ extension IntroViewController: UICollectionViewDataSource {
         cell.setUp(with: menuItem) { item in
     
             switch item {
-            case .theMission: break
+            case .theMission: self.performSegue(withIdentifier: "TheMission", sender: self)
             case .surveyResult: self.presentSurvey()
             case .howWeWork: self.playGarageVideo()
             case .ourPeople: self.presentVideoGrid()
             case .concepts: self.performSegue(withIdentifier: item.title, sender: self)
-                // Special case were title has newline char
-                //
+            // Special case were title has newline char
+            //
             case .ourPlan: self.performSegue(withIdentifier: "Our Plan", sender: self)
             }
         }

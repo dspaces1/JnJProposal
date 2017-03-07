@@ -46,8 +46,8 @@ class GraphCollectionViewCell: UICollectionViewCell {
         
         pieChartData.addDataSet(pieChartDataSet)
         
-        self.pieChartView.chartDescription?.text = surveyData.description
-        self.pieChartView.data = pieChartData
+        pieChartView.chartDescription?.text = surveyData.description
+        pieChartView.data = pieChartData
         configurePieGraphDisplaySettings()
     }
     
@@ -57,7 +57,7 @@ class GraphCollectionViewCell: UICollectionViewCell {
 extension GraphCollectionViewCell {
     func configurePieGraphDisplaySettings() {
         
-        self.pieChartView.usePercentValuesEnabled = true
-        self.pieChartView.animate(xAxisDuration: 0.0, yAxisDuration: 1.5)
+        pieChartView.usePercentValuesEnabled = true
+        pieChartView.animate(xAxisDuration: 0.0, yAxisDuration: 1.5)
     }
 }

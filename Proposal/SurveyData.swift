@@ -25,10 +25,10 @@ extension SurveyData {
                               labels: ["Happy", "Neutral", "Unhappy"],
                               values: [38.0, 7.0, 10.0])
         case 1:
-            return SurveyData(title: "J&J Employee Satisfaction in Closed Space",
+            return SurveyData(title: "J&J Employee Team Collaboration Effectiveness",
                               description: "Percentage of Employees",
-                              labels: ["Happy", "Neutral", "Unhappy"],
-                              values: [9.0, 1.0, 6.0])
+                              labels: ["Strong", "Neutral", "Weak"],
+                              values: [49.0, 4.0, 2.0])
         case 2:
             return SurveyData(title: "Student and Graduate Talent Job Search Preferences",
                               description: "Percentage of Individuals",

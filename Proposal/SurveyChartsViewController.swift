@@ -35,8 +35,7 @@ class SurveyChartsViewController: UIViewController {
     
     func setUpGraphCollectionView(){
         graphCollectionView.dataSource = self
-        
-        flowLayout.estimatedItemSize = CGSize(width: 350, height: 350)
+        graphCollectionView.delegate = self
     }
 
 }

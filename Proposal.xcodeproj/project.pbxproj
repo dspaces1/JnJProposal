@@ -19,7 +19,6 @@
 		9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */; };
 		DA806E491E61F51800769996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E481E61F51800769996 /* AppDelegate.swift */; };
 		DA806E4E1E61F51800769996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4C1E61F51800769996 /* Main.storyboard */; };
-		DA806E501E61F51800769996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4F1E61F51800769996 /* Assets.xcassets */; };
 		DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E511E61F51800769996 /* LaunchScreen.storyboard */; };
 		DA806E5C1E61F73600769996 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5B1E61F73600769996 /* IntroViewController.swift */; };
 		DA806E5E1E61F9BB00769996 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E5D1E61F9BB00769996 /* NavigationViewController.swift */; };
@@ -39,8 +38,6 @@
 		DA8D23DF1E6CD3820052B816 /* LoadViews+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */; };
 		DA8D23E31E6CE7170052B816 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E21E6CE7170052B816 /* Profile.swift */; };
 		DA8D23E71E6CE8260052B816 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */; };
-		DA8D23E91E6CEF6A0052B816 /* Maddie.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23E81E6CEF6A0052B816 /* Maddie.mov */; };
-		DA8D23EB1E6CF01C0052B816 /* Kopi.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23EA1E6CF01C0052B816 /* Kopi.mov */; };
 		DA8D23F91E6DFAD40052B816 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23F81E6DFAD40052B816 /* MenuItem.swift */; };
 		DA8D23FC1E6DFBE40052B816 /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23FA1E6DFBE40052B816 /* MenuItemCollectionViewCell.swift */; };
 		DA8D23FD1E6DFBE40052B816 /* MenuItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23FB1E6DFBE40052B816 /* MenuItemCollectionViewCell.xib */; };
@@ -58,6 +55,11 @@
 		DA8D241A1E6E44DC0052B816 /* ProximaNova-ThinIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D240C1E6E44DC0052B816 /* ProximaNova-ThinIt.otf */; };
 		DA8D241B1E6E44DC0052B816 /* ProximaNova-Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D240D1E6E44DC0052B816 /* ProximaNova-Xbold.otf */; };
 		DA8D241C1E6E44DC0052B816 /* ProximaNova-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D240E1E6E44DC0052B816 /* ProximaNova-XboldIt.otf */; };
+		DA8D24201E6E50A50052B816 /* Kopi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241D1E6E50A50052B816 /* Kopi.mp4 */; };
+		DA8D24211E6E50A50052B816 /* Maddie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241E1E6E50A50052B816 /* Maddie.mp4 */; };
+		DA8D24221E6E50A50052B816 /* Will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241F1E6E50A50052B816 /* Will.mp4 */; };
+		DA8D24241E6E6A4B0052B816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8D24231E6E6A4B0052B816 /* Assets.xcassets */; };
+		DA8D24261E6F15F40052B816 /* Chris.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D24251E6F15F40052B816 /* Chris.mp4 */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +79,6 @@
 		DA806E451E61F51800769996 /* Proposal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proposal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E481E61F51800769996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA806E4D1E61F51800769996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA806E4F1E61F51800769996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA806E521E61F51800769996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA806E541E61F51800769996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA806E5B1E61F73600769996 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +99,6 @@
 		DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadViews+UIScrollView.swift"; sourceTree = "<group>"; };
 		DA8D23E21E6CE7170052B816 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
-		DA8D23E81E6CEF6A0052B816 /* Maddie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Maddie.mov; sourceTree = "<group>"; };
-		DA8D23EA1E6CF01C0052B816 /* Kopi.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Kopi.mov; sourceTree = "<group>"; };
 		DA8D23F81E6DFAD40052B816 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		DA8D23FA1E6DFBE40052B816 /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA8D23FB1E6DFBE40052B816 /* MenuItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +116,11 @@
 		DA8D240C1E6E44DC0052B816 /* ProximaNova-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ThinIt.otf"; sourceTree = "<group>"; };
 		DA8D240D1E6E44DC0052B816 /* ProximaNova-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Xbold.otf"; sourceTree = "<group>"; };
 		DA8D240E1E6E44DC0052B816 /* ProximaNova-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-XboldIt.otf"; sourceTree = "<group>"; };
+		DA8D241D1E6E50A50052B816 /* Kopi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kopi.mp4; sourceTree = "<group>"; };
+		DA8D241E1E6E50A50052B816 /* Maddie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maddie.mp4; sourceTree = "<group>"; };
+		DA8D241F1E6E50A50052B816 /* Will.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Will.mp4; sourceTree = "<group>"; };
+		DA8D24231E6E6A4B0052B816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA8D24251E6F15F40052B816 /* Chris.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chris.mp4; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,10 +183,10 @@
 		DA806E471E61F51800769996 /* Proposal */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D24231E6E6A4B0052B816 /* Assets.xcassets */,
 				DA8D24001E6E44C10052B816 /* Fonts */,
 				DA8D23F71E6DFAB10052B816 /* Main Menu */,
 				DA806E5A1E61F54300769996 /* View Controllers */,
-				DA8D23DD1E6C9C870052B816 /* Views */,
 				4B9D6B811E678E780030474F /* Model */,
 				DA8D23BB1E6635CD0052B816 /* Utility */,
 				DA8D23ED1E6CF2950052B816 /* Video Interviews */,
@@ -191,7 +195,6 @@
 				DA8D23C91E6C6D850052B816 /* Floor Plan */,
 				DA806E481E61F51800769996 /* AppDelegate.swift */,
 				DA806E4C1E61F51800769996 /* Main.storyboard */,
-				DA806E4F1E61F51800769996 /* Assets.xcassets */,
 				DA806E511E61F51800769996 /* LaunchScreen.storyboard */,
 				DA806E541E61F51800769996 /* Info.plist */,
 				DA8D23C31E691ED60052B816 /* NotificationCenterKeys.swift */,
@@ -273,13 +276,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		DA8D23DD1E6C9C870052B816 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		DA8D23E41E6CE7E70052B816 /* Video Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +303,10 @@
 		DA8D23ED1E6CF2950052B816 /* Video Interviews */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D24251E6F15F40052B816 /* Chris.mp4 */,
+				DA8D241D1E6E50A50052B816 /* Kopi.mp4 */,
+				DA8D241E1E6E50A50052B816 /* Maddie.mp4 */,
+				DA8D241F1E6E50A50052B816 /* Will.mp4 */,
 				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
 			);
 			name = "Video Interviews";
@@ -408,24 +408,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */,
-				DA806E501E61F51800769996 /* Assets.xcassets in Resources */,
 				4B9D6B801E678B880030474F /* GraphCollectionViewCell.xib in Resources */,
 				9A5072441E6871C0006D0D84 /* VideoGridViewController.xib in Resources */,
 				4B9D6B7C1E6642840030474F /* SurveyChartsViewController.xib in Resources */,
+				DA8D24211E6E50A50052B816 /* Maddie.mp4 in Resources */,
+				DA8D24201E6E50A50052B816 /* Kopi.mp4 in Resources */,
 				DA8D24131E6E44DC0052B816 /* ProximaNova-Light.otf in Resources */,
 				DA8D241B1E6E44DC0052B816 /* ProximaNova-Xbold.otf in Resources */,
 				DA8D24121E6E44DC0052B816 /* ProximaNova-BoldIt.otf in Resources */,
+				DA8D24261E6F15F40052B816 /* Chris.mp4 in Resources */,
 				DA8D24171E6E44DC0052B816 /* ProximaNova-Sbold.otf in Resources */,
 				DA8D24161E6E44DC0052B816 /* ProximaNova-RegIt.otf in Resources */,
+				DA8D24221E6E50A50052B816 /* Will.mp4 in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
-				DA8D23E91E6CEF6A0052B816 /* Maddie.mov in Resources */,
 				DA8D23FD1E6DFBE40052B816 /* MenuItemCollectionViewCell.xib in Resources */,
 				DA8D24101E6E44DC0052B816 /* ProximaNova-BlackIt.otf in Resources */,
-				DA8D23E11E6CE5CC0052B816 /* Will.mov in Resources */,
 				DA8D23C01E67BE7D0052B816 /* FloorPlan.storyboard in Resources */,
 				DA8D241A1E6E44DC0052B816 /* ProximaNova-ThinIt.otf in Resources */,
 				DA8D24151E6E44DC0052B816 /* ProximaNova-Reg.otf in Resources */,
-				DA8D23EB1E6CF01C0052B816 /* Kopi.mov in Resources */,
 				DA8D24181E6E44DC0052B816 /* ProximaNova-SboldIt.otf in Resources */,
 				9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */,
 				DA8D24111E6E44DC0052B816 /* ProximaNova-Bold.otf in Resources */,
@@ -433,6 +433,7 @@
 				DA8D24141E6E44DC0052B816 /* ProximaNova-LightIt.otf in Resources */,
 				9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */,
 				DA8D241C1E6E44DC0052B816 /* ProximaNova-XboldIt.otf in Resources */,
+				DA8D24241E6E6A4B0052B816 /* Assets.xcassets in Resources */,
 				DA8D24191E6E44DC0052B816 /* ProximaNova-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

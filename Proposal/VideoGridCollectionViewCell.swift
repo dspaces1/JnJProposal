@@ -32,9 +32,6 @@ class VideoGridCollectionViewCell: UICollectionViewCell {
     }
     
     func loadVideo() {
-//        guard let path = Bundle.main.path(forResource: "Will", ofType: "mov") else { return }
-//        
-//        let videoUrl = URL(fileURLWithPath: path)
         let player = AVPlayer(url: profile.videoURL)
         
         playerViewController.player = player

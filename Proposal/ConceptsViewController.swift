@@ -17,7 +17,8 @@ class ConceptsViewController: UIViewController {
         super.viewDidLoad()
         scrollView.delegate = self
         
-        let imageNames = ["AirBnb", "AirBnb", "AirBnb"]
+        let imageNames = ["AirBnb", "FacebookCali", "GoDaddy", "Concept1", "Concept2", "Concept3"]
+        pageControl.numberOfPages = imageNames.count
         var imageViews = [UIImageView]()
         
         for imageName in imageNames {

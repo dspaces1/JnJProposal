@@ -30,15 +30,16 @@ class SurveyChartsViewController: UIViewController {
     
     func setUpGraphCollectionView(){
         graphCollectionView.dataSource = self
+        graphCollectionView.delegate = self
         
-        flowLayout.estimatedItemSize = CGSize(width: 100, height: 100)
+        automaticallyAdjustsScrollViewInsets = false
     }
 
 }
 
 extension SurveyChartsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
     
@@ -50,4 +51,16 @@ extension SurveyChartsViewController: UICollectionViewDataSource {
         return cell
     }
 
+}
+
+extension SurveyChartsViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let spaceBetweenItems: CGFloat = 10.0
+        
+        let itemWidth = floor((collectionView.frame.size.width - (spaceBetweenItems * 2))/2)
+        let itemHeight = floor((collectionView.frame.size.height - (spaceBetweenItems * 2))/2)
+        
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
 }

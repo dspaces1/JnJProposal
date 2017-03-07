@@ -10,9 +10,8 @@ import Foundation
 
 struct SurveyData {
     let title: String
-    let dataLabels: [String]
-    let dataSetIdentifiers: [String]
-    let values: [[Double]]
+    let labels: [String]
+    let values: [Double]
 }
 
 extension SurveyData {
@@ -20,10 +19,21 @@ extension SurveyData {
     static func getGraphData(surveyNumber: Int) -> SurveyData? {
         switch surveyNumber {
         case 0:
-            return SurveyData(title: "J&J Employee Happiness in Open Space",
-                              dataLabels: ["Open Space Employees"],
-                              dataSetIdentifiers: ["Very Happy", "Happy", "Neutral", "Unhappy", "Very Unhappy"],
-                              values: [[19.0, 19.0, 7.0, 9.0, 1.0]])
+            return SurveyData(title: "J&J Employee Satisfaction in Open Space",
+                              labels: ["Happy", "Neutral", "Unhappy"],
+                              values: [38.0, 7.0, 10.0])
+        case 1:
+            return SurveyData(title: "J&J Employee Team Collaboration Effectiveness",
+                              labels: ["Strong", "Neutral", "Weak"],
+                              values: [49.0, 4.0, 2.0])
+        case 2:
+            return SurveyData(title: "Student and Graduate Talent Job Search Preferences",
+                              labels: ["Type of Work", "Work Location", "Workspace", "Company Reputation"],
+                              values: [69.0, 13.0, 18.0, 12.0])
+        case 3:
+            return SurveyData(title: "Student and Graduate Talent Workspace Preferences",
+                              labels: ["Open Space", "Closed Space", "Other"],
+                              values: [13.0, 5.0, 1.0])
         default:
             return nil
         }

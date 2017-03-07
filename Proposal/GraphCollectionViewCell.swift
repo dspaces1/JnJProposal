@@ -8,56 +8,69 @@
 
 import UIKit
 import Charts
+import Foundation
 
 class GraphCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var pieChartView: PieChartView!
     
     func setUp(surveyData: SurveyData) {
         titleLabel.text = surveyData.title
         
-        setMultipleBarGraphDataWithSurveyData(surveyData: surveyData)
+        setPieChartGraphDataWithSurveyData(surveyData: surveyData)
     }
     
-    func setMultipleBarGraphDataWithSurveyData(surveyData: SurveyData) {
+    func setPieChartGraphDataWithSurveyData(surveyData: SurveyData) {
         
-        var dataSets: [BarChartDataSet] = []
+        let pieChartData = PieChartData()
+        let pieChartDataSet = PieChartDataSet()
+
         for i in 0..<surveyData.values.count {
-            var dataEntries: [BarChartDataEntry] = []
-            for j in 0..<surveyData.values[i].count {
-                let dataEntry = BarChartDataEntry(x: Double(j), y: surveyData.values[i][j])
-                dataEntries.append(dataEntry)
-            }
-            let chartDataSet = BarChartDataSet(values: dataEntries, label: surveyData.dataLabels[i])
-            chartDataSet.colors = ChartColorTemplates.colorful()
-            dataSets.append(chartDataSet)
+            let pieChartDataEntry = PieChartDataEntry(value: surveyData.values[i], label: surveyData.labels[i])
+            _ = pieChartDataSet.addEntry(pieChartDataEntry)
         }
-        let chartData = BarChartData(dataSets: dataSets)
         
-        configureBarGraphDisplaySettings()
-        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:surveyData.dataSetIdentifiers)
-        barChartView.data = chartData
+        configurePieChartDataSetDisplaySettings(pieChartDataSet: pieChartDataSet)
+        pieChartData.addDataSet(pieChartDataSet)
+        
+        pieChartView.data = pieChartData
+        configurePieChartDisplaySettings()
     }
+    
 }
 
-// MARK: - Collection View Configue
-//
+// MARK: - Collection View Configure
 extension GraphCollectionViewCell {
-    
-    func configureBarGraphDisplaySettings() {
-        barChartView.chartDescription?.text = ""
-        barChartView.pinchZoomEnabled = false
-        barChartView.doubleTapToZoomEnabled = false
-        barChartView.highlightPerTapEnabled = false
-        barChartView.highlightPerDragEnabled = false
-        barChartView.xAxis.labelPosition = .bottom
-        barChartView.leftAxis.drawGridLinesEnabled = false
-        barChartView.leftAxis.drawAxisLineEnabled = false
-        barChartView.rightAxis.drawGridLinesEnabled = false
-        barChartView.rightAxis.drawAxisLineEnabled = false
-        barChartView.rightAxis.drawLabelsEnabled = false
-        
-        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+    func getCustomFontType() -> NSUIFont {
+        return NSUIFont(name: "Proxima Nova", size: 15.0)!
     }
+    
+    func configurePieChartDisplaySettings() {
+        let font = getCustomFontType()
+        
+        pieChartView.chartDescription?.text = nil
+        pieChartView.usePercentValuesEnabled = true
+        pieChartView.animate(xAxisDuration: 0.0, yAxisDuration: 1.5)
+        pieChartView.holeColor = backgroundColor
+        pieChartView.legend.font = font
+        pieChartView.legend.textColor = NSUIColor.white
+    }
+    
+    func configurePieChartDataSetDisplaySettings(pieChartDataSet: PieChartDataSet) {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.maximumFractionDigits = 1
+        formatter.multiplier = 1.0
+        
+        let font = getCustomFontType()
+        pieChartDataSet.valueFont = font
+        pieChartDataSet.colors = ChartColorTemplates.colorful()
+        pieChartDataSet.label = nil
+        pieChartDataSet.xValuePosition = .outsideSlice
+        pieChartDataSet.valueTextColor = NSUIColor.white
+        
+        pieChartDataSet.valueFormatter = DefaultValueFormatter(formatter: formatter)
+    }
+    
 }

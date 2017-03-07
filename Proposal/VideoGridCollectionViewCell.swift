@@ -17,17 +17,25 @@ class VideoGridCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var videoView: UIView!
     
     var playerViewController = AVPlayerViewController()
+    var profile: Profile!
     
     override func prepareForReuse() {
         videoView.alpha = 0.0
         videoView.isHidden = true
     }
     
-    func loadVideo() {
-        guard let path = Bundle.main.path(forResource: "SampleVideo", ofType: "mp4") else { return }
+    func setUp(with profile: Profile) {
+        self.profile = profile
         
-        let videoUrl = URL(fileURLWithPath: path)
-        let player = AVPlayer(url: videoUrl)
+        titleLabel.text = profile.name
+        imageView.image = profile.image
+    }
+    
+    func loadVideo() {
+//        guard let path = Bundle.main.path(forResource: "Will", ofType: "mov") else { return }
+//        
+//        let videoUrl = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: profile.videoURL)
         
         playerViewController.player = player
         playerViewController.view.frame = videoView.frame

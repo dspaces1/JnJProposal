@@ -12,10 +12,14 @@ class VideoGridViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var profiles: [Profile] = []
     var selectedCellFrame = CGRect.zero
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let profileBuilder = ProfileBuilder()
+        profiles = profileBuilder.getAll()
         
         collectionView.register(UINib(nibName: VideoGridCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: VideoGridCollectionViewCell.className)
     }
@@ -33,11 +37,15 @@ class VideoGridViewController: UIViewController {
 extension VideoGridViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return profiles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoGridCollectionViewCell.className, for: indexPath) as! VideoGridCollectionViewCell
+        
+        let profile = profiles[indexPath.row]
+        cell.setUp(with: profile)
+        
         return cell
     }
 }
@@ -92,7 +100,7 @@ extension VideoGridViewController: UICollectionViewDelegate {
         let width = min(self.collectionView.frame.size.width - 60.0, 600.0)
         let height = min(self.collectionView.frame.size.height - 60.0, 600.0)
         
-        return CGRect(x: self.collectionView.center.x - width/2, y: self.collectionView.center.y - height/2, width: width, height: height)
+        return CGRect(x: self.collectionView.center.x - width / 2, y: self.collectionView.center.y - height / 2, width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -105,8 +113,8 @@ extension VideoGridViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let spaceBetweenItems: CGFloat = 10.0
         
-        let itemWidth = floor((collectionView.frame.size.width - (spaceBetweenItems * 2))/3)
-        let itemHeight = floor((collectionView.frame.size.height - (spaceBetweenItems * 2))/3)
+        let itemWidth = floor((collectionView.frame.size.width - (spaceBetweenItems * 2)) / 3)
+        let itemHeight = floor((collectionView.frame.size.height - (spaceBetweenItems * 2)) / 3)
         
         return CGSize(width: itemWidth, height: itemHeight)
     }

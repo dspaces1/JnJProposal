@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ProximaNova-Xbold.otf</string>
+		<string>ProximaNova-XboldIt.otf</string>
+		<string>ProximaNova-Black.otf</string>
+		<string>ProximaNova-BlackIt.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-BoldIt.otf</string>
+		<string>ProximaNova-Light.otf</string>
+		<string>ProximaNova-LightIt.otf</string>
+		<string>ProximaNova-Reg.otf</string>
+		<string>ProximaNova-RegIt.otf</string>
+		<string>ProximaNova-Sbold.otf</string>
+		<string>ProximaNova-SboldIt.otf</string>
+		<string>ProximaNova-Thin.otf</string>
+		<string>ProximaNova-ThinIt.otf</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

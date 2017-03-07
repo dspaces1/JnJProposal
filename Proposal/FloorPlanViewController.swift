@@ -9,17 +9,29 @@
 import UIKit
 import PanelKit
 
-class FloorPlanViewController: UIViewController, PanelManager {
+class FloorPlanViewController: UIViewController {
 
     @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var floorItemsBarButton: UIBarButtonItem!
     
     var panelViewControllers: [PanelViewController] = []
+    var floorItems: [FloorItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        floorItems = setFloorItems()
+        
+        
         NotificationCenter.default.addObserver(self, selector: #selector(removeViewController(withNotification:)), name: NotificationCenterKeys.didEndDrag, object: nil)
+    }
+    
+    func setFloorItems() -> [FloorItem] {
+        let floorItemBuilder = FloorItemBuilder(viewSize: contentView.frame)
+        let floorItems = floorItemBuilder.getDefault()
+        
+        return floorItems
     }
     
     func removeViewController(withNotification notification: NSNotification) {
@@ -32,28 +44,47 @@ class FloorPlanViewController: UIViewController, PanelManager {
         }
     }
     
-    @IBAction func addCubeViewController(_ sender: UIBarButtonItem) {
+    @IBAction func presentFloorItems(_ sender: UIBarButtonItem) {
+        let floorItemsViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemsViewController") as! FloorItemsViewController
         
-        let cubeViewController = storyboard?.instantiateViewController(withIdentifier: "CubeViewControllerID") as! CubeViewController
+        floorItemsViewController.delegate = self
+        floorItemsViewController.floorItems = floorItems
         
-        cubeViewController.restorationIdentifier = "\(UUID())"
-        
-        let cubePanelViewController = PanelViewController(with: cubeViewController, in: self)
-        
-        panelViewControllers.append(cubePanelViewController)
-        
-        
-        showPopover(cubePanelViewController, from: sender)
+        floorItemsViewController.modalPresentationStyle = .popover
+        floorItemsViewController.popoverPresentationController?.barButtonItem = sender
+    
+        present(floorItemsViewController, animated: true, completion: nil)
+    }
+}
+
+extension FloorPlanViewController: FloorItemsDelegate {
+    
+    func didSelect(item: FloorItem) {
+        createPanel(for: item)
     }
     
-    func showPopover(_ vc: UIViewController, from barButtonItem: UIBarButtonItem) {
+    func createPanel(for item: FloorItem) {
+        let floorItemViewController = storyboard?.instantiateViewController(withIdentifier: "FloorItemViewControllerID") as! FloorItemViewController
         
-        vc.modalPresentationStyle = .popover
-        vc.popoverPresentationController?.barButtonItem = barButtonItem
+        floorItemViewController.restorationIdentifier = "\(UUID())"
+        floorItemViewController.item = item
         
-        present(vc, animated: false, completion: nil)
         
+        let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
+        panelViewControllers.append(cubePanelViewController)
+        showPopover(cubePanelViewController, from: floorItemsBarButton)
     }
+    
+    func showPopover(_ viewController: UIViewController, from barButtonItem: UIBarButtonItem) {
+        
+        viewController.modalPresentationStyle = .popover
+        viewController.popoverPresentationController?.barButtonItem = barButtonItem
+        
+        present(viewController, animated: false, completion: nil)
+    }
+}
+
+extension FloorPlanViewController: PanelManager {
     
     // The view in which the panels may be dragged around
     var panelContentWrapperView: UIView {
@@ -69,7 +100,6 @@ class FloorPlanViewController: UIViewController, PanelManager {
     var panels: [PanelViewController] {
         return panelViewControllers
     }
-
-    
-
 }
+
+

@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diego" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-6u-Ddf">
-                        <rect key="frame" x="20" y="20" width="296" height="164"/>
+                        <rect key="frame" x="20" y="20" width="296" height="176"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Diego Urquiza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-xu-va2">
                         <rect key="frame" x="20" y="204" width="296" height="24"/>
@@ -39,7 +39,7 @@
                 <constraint firstItem="KYS-xu-va2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="CTv-0h-d1c"/>
                 <constraint firstAttribute="bottom" secondItem="cM6-Rk-xMw" secondAttribute="bottom" id="DQA-UJ-XoE"/>
                 <constraint firstItem="cM6-Rk-xMw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N6l-G5-6NS"/>
-                <constraint firstItem="KYS-xu-va2" firstAttribute="top" secondItem="Zu4-6u-Ddf" secondAttribute="bottom" constant="20" id="WCM-5u-JBB"/>
+                <constraint firstItem="KYS-xu-va2" firstAttribute="top" secondItem="Zu4-6u-Ddf" secondAttribute="bottom" constant="8" id="WCM-5u-JBB"/>
                 <constraint firstItem="Zu4-6u-Ddf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="eIz-rw-oHE"/>
                 <constraint firstAttribute="bottom" secondItem="KYS-xu-va2" secondAttribute="bottom" constant="20" id="jLM-vA-myp"/>
                 <constraint firstItem="cM6-Rk-xMw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mpC-05-rbi"/>

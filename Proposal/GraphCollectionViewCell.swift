@@ -15,11 +15,6 @@ class GraphCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var pieChartView: PieChartView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func setUp(surveyData: SurveyData) {
         titleLabel.text = surveyData.title
         
@@ -55,7 +50,23 @@ class GraphCollectionViewCell: UICollectionViewCell {
 
 // MARK: - Collection View Configure
 extension GraphCollectionViewCell {
+<<<<<<< HEAD
     func configurePieGraphDisplaySettings() {
+=======
+    
+    func configureBarGraphDisplaySettings() {
+        barChartView.chartDescription?.text = ""
+        barChartView.pinchZoomEnabled = false
+        barChartView.doubleTapToZoomEnabled = false
+        barChartView.highlightPerTapEnabled = false
+        barChartView.highlightPerDragEnabled = false
+        barChartView.xAxis.labelPosition = .bottom
+        barChartView.leftAxis.drawGridLinesEnabled = false
+        barChartView.leftAxis.drawAxisLineEnabled = false
+        barChartView.rightAxis.drawGridLinesEnabled = false
+        barChartView.rightAxis.drawAxisLineEnabled = false
+        barChartView.rightAxis.drawLabelsEnabled = false
+>>>>>>> b5ac11252235df17c41a115c7ae17021dd2b8757
         
         pieChartView.usePercentValuesEnabled = true
         pieChartView.animate(xAxisDuration: 0.0, yAxisDuration: 1.5)

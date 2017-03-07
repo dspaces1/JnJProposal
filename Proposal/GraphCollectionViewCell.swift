@@ -43,7 +43,7 @@ class GraphCollectionViewCell: UICollectionViewCell {
 // MARK: - Collection View Configure
 extension GraphCollectionViewCell {
     func getCustomFontType() -> NSUIFont {
-        return NSUIFont(name: "Proxima Nova", size: 15.0)!
+        return NSUIFont(name: "ProximaNova-Semibold", size: 12.0)!
     }
     
     func configurePieChartDisplaySettings() {

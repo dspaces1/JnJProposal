@@ -109,6 +109,9 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-uY-OZs">
                                 <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <connections>
+                                    <outlet property="delegate" destination="m3B-hq-jYC" id="YVc-Pl-opU"/>
+                                </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8mK-iJ-tYW">
                                 <rect key="frame" x="364" y="967" width="39" height="37"/>

@@ -37,7 +37,6 @@
 		DA8D23D81E6C8AC40052B816 /* ClickableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */; };
 		DA8D23DB1E6C96830052B816 /* ConceptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23D91E6C96830052B816 /* ConceptsViewController.swift */; };
 		DA8D23DF1E6CD3820052B816 /* LoadViews+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */; };
-		DA8D23E11E6CE5CC0052B816 /* Will.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23E01E6CE5CC0052B816 /* Will.mov */; };
 		DA8D23E31E6CE7170052B816 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E21E6CE7170052B816 /* Profile.swift */; };
 		DA8D23E71E6CE8260052B816 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */; };
 		DA8D23E91E6CEF6A0052B816 /* Maddie.mov in Resources */ = {isa = PBXBuildFile; fileRef = DA8D23E81E6CEF6A0052B816 /* Maddie.mov */; };
@@ -97,7 +96,6 @@
 		DA8D23D71E6C8AC40052B816 /* ClickableView+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClickableView+UIView.swift"; sourceTree = "<group>"; };
 		DA8D23D91E6C96830052B816 /* ConceptsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptsViewController.swift; sourceTree = "<group>"; };
 		DA8D23DE1E6CD3820052B816 /* LoadViews+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadViews+UIScrollView.swift"; sourceTree = "<group>"; };
-		DA8D23E01E6CE5CC0052B816 /* Will.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Will.mov; sourceTree = "<group>"; };
 		DA8D23E21E6CE7170052B816 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA8D23E61E6CE8260052B816 /* ProfileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
 		DA8D23E81E6CEF6A0052B816 /* Maddie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Maddie.mov; sourceTree = "<group>"; };
@@ -309,9 +307,6 @@
 		DA8D23ED1E6CF2950052B816 /* Video Interviews */ = {
 			isa = PBXGroup;
 			children = (
-				DA8D23E01E6CE5CC0052B816 /* Will.mov */,
-				DA8D23E81E6CEF6A0052B816 /* Maddie.mov */,
-				DA8D23EA1E6CF01C0052B816 /* Kopi.mov */,
 				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
 			);
 			name = "Video Interviews";

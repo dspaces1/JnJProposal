@@ -20,6 +20,10 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-c2-Bak">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5qG-s8-HYV">
                     <rect key="frame" x="0.0" y="68" width="1024" height="700"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -31,12 +35,17 @@
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.86252776015228427" green="0.86252776015228427" blue="0.86252776015228427" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5qG-s8-HYV" secondAttribute="bottom" id="7Fu-Q6-fCI"/>
                 <constraint firstItem="5qG-s8-HYV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9vo-uc-AX3"/>
                 <constraint firstItem="5qG-s8-HYV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="SR0-NH-UH1"/>
                 <constraint firstAttribute="trailing" secondItem="5qG-s8-HYV" secondAttribute="trailing" id="SaF-O6-n8C"/>
+                <constraint firstAttribute="trailing" secondItem="GYR-c2-Bak" secondAttribute="trailing" id="adJ-Qh-C69"/>
+                <constraint firstItem="GYR-c2-Bak" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fMh-7p-JLF"/>
+                <constraint firstItem="GYR-c2-Bak" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jQ1-sD-5A2"/>
+                <constraint firstAttribute="bottom" secondItem="GYR-c2-Bak" secondAttribute="bottom" id="zbs-vF-xde"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="-307" y="-134"/>

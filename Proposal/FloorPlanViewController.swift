@@ -70,9 +70,11 @@ extension FloorPlanViewController: FloorItemsDelegate {
         floorItemViewController.item = item
         
         
-        let cubePanelViewController = PanelViewController(with: floorItemViewController, in: self)
-        panelViewControllers.append(cubePanelViewController)
-        showPopover(cubePanelViewController, from: floorItemsBarButton)
+        let floorPanelViewController = PanelViewController(with: floorItemViewController, in: self)
+        
+        
+        panelViewControllers.append(floorPanelViewController)
+        showPopover(floorPanelViewController, from: floorItemsBarButton)
     }
     
     func showPopover(_ viewController: UIViewController, from barButtonItem: UIBarButtonItem) {

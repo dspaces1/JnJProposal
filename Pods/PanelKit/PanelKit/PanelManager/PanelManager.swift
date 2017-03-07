@@ -53,7 +53,7 @@ public extension PanelManager where Self: UIViewController {
 	}
 	
 	func enablePanelShadow(for panel: PanelViewController) -> Bool {
-		return true
+		return false
 	}
 	
 	var allowFloatingPanels: Bool {

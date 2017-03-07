@@ -74,7 +74,7 @@ enum ItemDetails {
         switch self {
         case .cubeRow: return CGSize(width: 0.24, height: 0.8)
         case .seatingDesk: return CGSize(width: 0.12, height: 0.14)
-        case .wall: return CGSize(width: 0.08, height: 0.8)
+        case .wall: return CGSize(width: 0.12, height: 0.8)
         }
     }
     

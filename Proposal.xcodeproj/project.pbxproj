@@ -18,6 +18,7 @@
 		9A5072481E6873DD006D0D84 /* VideoGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072461E6873DD006D0D84 /* VideoGridCollectionViewCell.xib */; };
 		9A50724A1E68AA2F006D0D84 /* SampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */; };
 		DA7DE9C61E6F53050077543D /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE9C51E6F53050077543D /* StatsViewController.swift */; };
+		DA7DE9C81E6F64170077543D /* Will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE9C71E6F64170077543D /* Will.mp4 */; };
 		DA806E491E61F51800769996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806E481E61F51800769996 /* AppDelegate.swift */; };
 		DA806E4E1E61F51800769996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E4C1E61F51800769996 /* Main.storyboard */; };
 		DA806E531E61F51800769996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA806E511E61F51800769996 /* LaunchScreen.storyboard */; };
@@ -58,7 +59,6 @@
 		DA8D241C1E6E44DC0052B816 /* ProximaNova-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D240E1E6E44DC0052B816 /* ProximaNova-XboldIt.otf */; };
 		DA8D24201E6E50A50052B816 /* Kopi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241D1E6E50A50052B816 /* Kopi.mp4 */; };
 		DA8D24211E6E50A50052B816 /* Maddie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241E1E6E50A50052B816 /* Maddie.mp4 */; };
-		DA8D24221E6E50A50052B816 /* Will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D241F1E6E50A50052B816 /* Will.mp4 */; };
 		DA8D24241E6E6A4B0052B816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8D24231E6E6A4B0052B816 /* Assets.xcassets */; };
 		DA8D24261E6F15F40052B816 /* Chris.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8D24251E6F15F40052B816 /* Chris.mp4 */; };
 		E754165D539559CD82430A2D /* Pods_Proposal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */; };
@@ -78,6 +78,7 @@
 		9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo.mp4; sourceTree = "<group>"; };
 		C800359DAC0F82BB62F5CDF1 /* Pods_Proposal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proposal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7DE9C51E6F53050077543D /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		DA7DE9C71E6F64170077543D /* Will.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Will.mp4; sourceTree = "<group>"; };
 		DA806E451E61F51800769996 /* Proposal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proposal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA806E481E61F51800769996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA806E4D1E61F51800769996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		DA8D240E1E6E44DC0052B816 /* ProximaNova-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-XboldIt.otf"; sourceTree = "<group>"; };
 		DA8D241D1E6E50A50052B816 /* Kopi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kopi.mp4; sourceTree = "<group>"; };
 		DA8D241E1E6E50A50052B816 /* Maddie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maddie.mp4; sourceTree = "<group>"; };
-		DA8D241F1E6E50A50052B816 /* Will.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Will.mp4; sourceTree = "<group>"; };
 		DA8D24231E6E6A4B0052B816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8D24251E6F15F40052B816 /* Chris.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chris.mp4; sourceTree = "<group>"; };
 		F44B73F856CF87F20E14E7D2 /* Pods-Proposal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proposal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proposal/Pods-Proposal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,10 +314,10 @@
 		DA8D23ED1E6CF2950052B816 /* Video Interviews */ = {
 			isa = PBXGroup;
 			children = (
+				DA7DE9C71E6F64170077543D /* Will.mp4 */,
 				DA8D24251E6F15F40052B816 /* Chris.mp4 */,
 				DA8D241D1E6E50A50052B816 /* Kopi.mp4 */,
 				DA8D241E1E6E50A50052B816 /* Maddie.mp4 */,
-				DA8D241F1E6E50A50052B816 /* Will.mp4 */,
 				9A5072491E68AA01006D0D84 /* SampleVideo.mp4 */,
 			);
 			name = "Video Interviews";
@@ -430,7 +430,6 @@
 				DA8D24261E6F15F40052B816 /* Chris.mp4 in Resources */,
 				DA8D24171E6E44DC0052B816 /* ProximaNova-Sbold.otf in Resources */,
 				DA8D24161E6E44DC0052B816 /* ProximaNova-RegIt.otf in Resources */,
-				DA8D24221E6E50A50052B816 /* Will.mp4 in Resources */,
 				DA806E4E1E61F51800769996 /* Main.storyboard in Resources */,
 				DA8D23FD1E6DFBE40052B816 /* MenuItemCollectionViewCell.xib in Resources */,
 				DA8D24101E6E44DC0052B816 /* ProximaNova-BlackIt.otf in Resources */,
@@ -446,6 +445,7 @@
 				DA8D241C1E6E44DC0052B816 /* ProximaNova-XboldIt.otf in Resources */,
 				DA8D24241E6E6A4B0052B816 /* Assets.xcassets in Resources */,
 				DA8D24191E6E44DC0052B816 /* ProximaNova-Thin.otf in Resources */,
+				DA7DE9C81E6F64170077543D /* Will.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

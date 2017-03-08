@@ -112,10 +112,11 @@ extension VideoGridViewController: UICollectionViewDelegate {
     }
     
     func modalFrame() -> CGRect {
-        let width = min(self.collectionView.frame.size.width - 60.0, 600.0)
-        let height = min(self.collectionView.frame.size.height - 60.0, 600.0)
+        let width = min(view.frame.size.width - 60.0, 600.0)
+        let height = min(view.frame.size.height - 60.0, 600.0)
+        let navBarHeight: CGFloat = navigationController?.navigationBar.frame.height ?? 0.0
         
-        return CGRect(x: self.collectionView.center.x - (width / 2), y: self.collectionView.center.y - (self.collectionView.frame.origin.y * 2) - (height / 2), width: width, height: height)
+        return CGRect(x: view.center.x - (width / 2), y: view.center.y - navBarHeight - (height / 2), width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

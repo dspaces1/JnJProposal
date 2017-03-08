@@ -22,6 +22,11 @@ class VideoGridViewController: UIViewController {
         profiles = profileBuilder.getAll()
         
         collectionView.register(UINib(nibName: VideoGridCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: VideoGridCollectionViewCell.className)
+        collectionView.backgroundView = UIView()
+        collectionView.backgroundView?.isUserInteractionEnabled = true
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapInBackgroundView))
+        collectionView.backgroundView?.gestureRecognizers = [tapRecognizer]
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -31,6 +36,12 @@ class VideoGridViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    func tapInBackgroundView() {
+        if let selectedIndexPaths = collectionView.indexPathsForSelectedItems, selectedIndexPaths.count > 0 {
+            _ = selectedIndexPaths.map { closeCell(at: $0) }
+        }
     }
 }
 
@@ -74,10 +85,12 @@ extension VideoGridViewController: UICollectionViewDelegate {
         UIView.transition(with: cell, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, animations: {
             cell.frame = self.selectedCellFrame
             cell.videoView.alpha = 0.0
+            self.collectionView.isUserInteractionEnabled = false
         }, completion: { completed in
             cell.videoView.isHidden = true
             cell.playerViewController.player?.pause()
             self.selectedCellFrame = CGRect.zero
+            self.collectionView.isUserInteractionEnabled = true
         })
     }
     
@@ -91,8 +104,10 @@ extension VideoGridViewController: UICollectionViewDelegate {
             cell.frame = self.modalFrame()
             cell.videoView.alpha = 1.0
             cell.loadVideo()
+            self.collectionView.isUserInteractionEnabled = false
         }, completion: { completed in
             cell.playerViewController.player?.play()
+            self.collectionView.isUserInteractionEnabled = true
         })
     }
     
@@ -100,7 +115,7 @@ extension VideoGridViewController: UICollectionViewDelegate {
         let width = min(self.collectionView.frame.size.width - 60.0, 600.0)
         let height = min(self.collectionView.frame.size.height - 60.0, 600.0)
         
-        return CGRect(x: self.collectionView.center.x - width / 2, y: self.collectionView.center.y - height / 2, width: width, height: height)
+        return CGRect(x: self.collectionView.center.x - (width / 2), y: self.collectionView.center.y - (self.collectionView.frame.origin.y * 2) - (height / 2), width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

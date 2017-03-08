@@ -33,6 +33,10 @@ class IntroViewController: UIViewController {
         
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     func setUpCollectionView() {
         let menuItemNib = UINib(nibName: MenuItemCollectionViewCell.className, bundle: nil)

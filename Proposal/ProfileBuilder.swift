@@ -29,6 +29,14 @@ struct ProfileBuilder {
         let chrisProfile = Profile(name: chris.name, videoURL: chris.videoURL, image: chris.image)
         profiles.append(chrisProfile)
         
+        let joe = ProfileDetails.joe
+        let joeProfile = Profile(name: joe.name, videoURL: joe.videoURL, image: joe.image)
+        profiles.append(joeProfile)
+        
+        let clip = ProfileDetails.clip
+        let clipProfile = Profile(name: clip.name, videoURL: clip.videoURL, image: clip.image)
+        profiles.append(clipProfile)
+        
         return profiles
     }
 }
@@ -38,6 +46,8 @@ enum ProfileDetails {
     case kopi
     case maddie
     case chris
+    case joe
+    case clip
     
     var name: String {
         switch self {
@@ -45,6 +55,8 @@ enum ProfileDetails {
         case .kopi: return "Kopi Ramsay"
         case .maddie: return "Maddie Lu"
         case .chris: return "Chris Corrado"
+        case .joe: return "Joe Manfredonia"
+        case .clip: return ""
         }
     }
     
@@ -62,6 +74,12 @@ enum ProfileDetails {
         case .chris:
             let path = Bundle.main.path(forResource: "Chris", ofType: "mp4")!
             return URL(fileURLWithPath: path)
+        case .joe:
+            let path = Bundle.main.path(forResource: "Joe", ofType: "mp4")!
+            return URL(fileURLWithPath: path)
+        case .clip:
+            let path = Bundle.main.path(forResource: "Clip", ofType: "mp4")!
+            return URL(fileURLWithPath: path)
         }
     }
     
@@ -71,6 +89,8 @@ enum ProfileDetails {
         case .kopi: return UIImage(named: "Kopi")!
         case .maddie: return UIImage(named: "Maddie")!
         case .chris: return UIImage(named: "Chris")!
+        case .joe: return UIImage(named: "Joe")!
+        case .clip: return UIImage(named: "Credo")!
         }
     }
 }
